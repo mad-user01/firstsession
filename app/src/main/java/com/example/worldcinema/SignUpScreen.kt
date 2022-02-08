@@ -20,11 +20,11 @@ class SignUpScreen : AppCompatActivity() {
     }
 
     fun click1(view: View) {
-        val pass1 = pass11.toString()
-        val pass2 = pass22.toString()
+        val pass1 = pass11.getText().toString()
+        val pass2 = pass22.getText().toString()
 
 
-        if (pass1==pass2) {
+        if (pass1!=pass2) {
             val message = "Введённые пароли не совпадают."
             val z = Toast.LENGTH_SHORT
             val toast = Toast.makeText(applicationContext, message, z)
